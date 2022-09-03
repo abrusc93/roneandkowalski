@@ -1,0 +1,136 @@
+body {
+    margin: 0pt;
+    width: 100vw;
+    height: 100%;
+    background-color: white;
+}
+
+nav{
+    transition: background-color 0.5s ease;
+}
+
+nav li{
+    font-family: Century Schoolbook Roman;
+    font-size: larger;
+    padding-inline: 2vw;
+}
+
+.home-background{
+    background-image: url(Images/home-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+.blur{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+}
+
+#home .heading{
+    font-family: Century Schoolbook Roman;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 110px;
+    color: white;
+    text-shadow: 2px 6px 8px #000000;
+}
+
+#about{
+    padding-top: 101.812px;
+    margin-top: 1em;
+}
+
+#practice-areas li{
+    margin-inline: 10px;
+    padding-inline-end: 10px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=email], input[type=tel], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .form-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+footer{
+    background-color: black;
+    margin-bottom: 50pt;
+}
+
+@media only screen and (min-width: 995px) {
+
+    .width-25{
+        width: 25%;
+    }
+
+    .width-50{
+        width: 50%;
+    }
+
+    .width-75{
+        width: 75%;
+    }
+
+    #practice-areas li{
+        white-space: nowrap;
+    }
+
+}
+
+@media only screen and (max-width: 1160px) {
+    #call-today{
+        display: none;
+    }
+}
+
+/* Mobile View - When screen width is less than 768px */
+@media only screen and (max-width: 995px) {
+
+    nav{
+        background-color: rgb(62, 98, 147);
+    }
+
+    .home-background{
+        padding-top: 101.812px;
+        height: 40vh;
+    }
+
+    #home .heading{
+        padding-top: 50px;
+    }
+
+    .responsive-flex {
+        flex-direction: column;
+    }
+
+}
