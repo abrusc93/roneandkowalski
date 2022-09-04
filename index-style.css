@@ -89,20 +89,12 @@ footer{
 
 @media only screen and (min-width: 995px) {
 
-    .width-25{
-        width: 25%;
-    }
-
-    .width-50{
-        width: 50%;
-    }
-
-    .width-75{
-        width: 75%;
-    }
-
     #practice-areas li{
         white-space: nowrap;
+    }
+
+    #footer-item-3{
+        align-self: flex-end;
     }
 
 }
@@ -113,7 +105,7 @@ footer{
     }
 }
 
-/* Mobile View - When screen width is less than 768px */
+/* Mobile View - When screen width is less than 995px */
 @media only screen and (max-width: 995px) {
 
     nav{
@@ -131,6 +123,20 @@ footer{
 
     .responsive-flex {
         flex-direction: column;
+    }
+
+    #footer-item-1{
+        order: 1;
+    }
+
+    #footer-item-2{
+        order: 2;
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+
+    #footer-item-3{
+        order: 3;
     }
 
 }
