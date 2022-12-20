@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-    if ($(window).scrollTop()<=50 && $(window).width()>995) {
+    if ($(window).scrollTop()<=50 && $(window).width()>768) {
       $('.navbar').css('background', 'transparent');
     } else {
       $('.navbar').css('background', 'rgb(62, 98, 147)');
