@@ -1,24 +1,24 @@
-.contact-banner{
+.testimonials-banner{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 40vh;
 }
 
-.contact-banner-blur{
+.testimonials-banner-blur{
     background-color: rgba(0, 0, 0, 0.5); 
     height: 100%; 
     width: 100%;
 }
 
-.contact{
-    margin-block: 1em;
+blockquote p{
+    margin-top: 2em;
 }
 
 /* Mobile View - When screen width is less than 768px */
 @media only screen and (max-width: 768px) {
 
-    .contact-banner{
+    .testimonials-banner{
         margin-top: 101.820px;
         height: 20vh;
     }    

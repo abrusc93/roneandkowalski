@@ -5,12 +5,11 @@ body {
     background-color: white;
 }
 
-nav{
+#navbar{
     transition: background-color 0.5s ease;
 }
 
 nav li{
-    font-family: Century Schoolbook Roman;
     font-size: larger;
     padding-inline: 2vw;
 }
@@ -29,8 +28,11 @@ nav li{
     width: 100%;
 }
 
-#home .heading{
+nav li, #home .heading, h1{
     font-family: Century Schoolbook Roman;
+}
+
+#home .heading{
     text-transform: uppercase;
     text-align: center;
     padding-top: 110px;
@@ -82,11 +84,11 @@ input[type=text], input[type=email], input[type=tel], select, textarea {
   /* Add a background color and some padding around the form */
   .form-container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: lightgray;
     padding: 20px;
   }
 
-footer{
+.page-footer{
     background-color: black;
     margin-bottom: 50pt;
 }
@@ -141,7 +143,7 @@ footer{
 /* Mobile View - When screen width is less than 768px */
 @media only screen and (max-width: 768px) {
 
-    nav{
+    #navbar{
         background-color: rgb(62, 98, 147);
     }
 
@@ -150,9 +152,12 @@ footer{
         color: white;
     }
 
+    #home{
+        padding-top: 101.820px;
+    }
+
     .home-background{
-        padding-top: 101.812px;
-        height: 40vh;
+        height: 30vh;
     }
 
     #home .heading{
