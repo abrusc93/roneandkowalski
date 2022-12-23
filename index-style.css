@@ -28,7 +28,7 @@ nav li{
     width: 100%;
 }
 
-nav li, #home .heading, h1{
+nav, #home .heading, h1{
     font-family: Century Schoolbook Roman;
 }
 
@@ -101,6 +101,10 @@ input[type=text], input[type=email], input[type=tel], select, textarea {
 }
 
 @media only screen and (min-width: 768px) {
+
+    #logo-name{
+        display: none;
+    }
 
     #mobile-phone-nav{
         display: none;
