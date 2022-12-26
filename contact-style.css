@@ -15,11 +15,52 @@
     margin-block: 1em;
 }
 
+/* When screen width is greater than 1126px */
+@media only screen and (min-width: 1126px) {
+    #milmay-office-container-mobile{
+        display: none;
+    }
+
+    #milmay-office-container{
+        display: block;
+    }
+}
+
+/* When screen width is less than 1126px */
+@media only screen and (max-width: 1126px) {
+
+    .responsive-flex {
+        flex-direction: column;
+    }
+
+    #milmay-office-container-mobile{
+        display: block;
+    }
+
+    #milmay-office-container{
+        display: none;
+    }
+
+    #footer-item-1{
+        order: 1;
+    }
+
+    #footer-item-2{
+        order: 2;
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+
+    #footer-item-3{
+        order: 3;
+    }
+}
+
 /* Mobile View - When screen width is less than 768px */
 @media only screen and (max-width: 768px) {
 
     .contact-banner{
         margin-top: 101.820px;
         height: 20vh;
-    }    
+    }
 }
