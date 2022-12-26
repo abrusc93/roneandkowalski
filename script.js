@@ -41,6 +41,12 @@ else if(pathname=="/contact.html"){
             $('#right-container').removeClass('mx-auto');
             $('#right-container').addClass('w-50');
         }
+        if($(window).width()<487){
+            $('#office-hours-mobile').removeClass('w-50');
+        }
+        if($(window).width()>487){
+            $('#office-hours-mobile').addClass('w-50');
+        }
     });
 
     if($(window).width()<1126){
@@ -52,6 +58,12 @@ else if(pathname=="/contact.html"){
         $('#staff-contacts-container').addClass('w-75');
         $('#right-container').removeClass('mx-auto');
         $('#right-container').addClass('w-50');
+    }
+    if($(window).width()<487){
+        $('#office-hours-mobile').removeClass('w-50');
+    }
+    if($(window).width()>487){
+        $('#office-hours-mobile').addClass('w-50');
     }
 }
 

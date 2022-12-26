@@ -64,3 +64,13 @@
         height: 20vh;
     }
 }
+
+/* When screen width is less than 487px */
+@media only screen and (max-width: 487px) {
+    #office-info-mobile{
+        flex-direction: column;        
+    }
+    #office-hours-mobile{
+        justify-self: center;
+    }
+}
