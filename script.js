@@ -11,20 +11,20 @@ $('.navbar-nav>.section-link>a').on('click', function(){
 });
 
 var pathname = window.location.pathname;
-if(pathname=="/index.html"){
+if(pathname=="/index.html" || pathname=="/"){
     $(window).resize(function(){
-        if($(window).width()<995){
+        if($(window).width()<1200){
          $('.form-container').removeClass('w-50');
         }
-        if($(window).width()>995){
+        if($(window).width()>1200){
             $('.form-container').addClass('w-50');
         }
     });
     
-    if($(window).width()<995){
+    if($(window).width()<1200){
         $('.form-container').removeClass('w-50');
     }
-    if($(window).width()>995){
+    if($(window).width()>1200){
         $('.form-container').addClass('w-50');
     }
 }

@@ -11,7 +11,11 @@ body {
 
 nav li{
     font-size: larger;
-    padding-inline: 2vw;
+    padding-inline: 1vw;
+}
+
+.dropdown .dropdown-item{
+    border-radius: .375rem;
 }
 
 .home-background{
@@ -100,17 +104,6 @@ input[type=submit]:hover {
     }
 }
 
-@media only screen and (min-width: 768px) {
-
-    #logo-name{
-        display: none;
-    }
-
-    #mobile-phone-nav{
-        display: none;
-    }
-}
-
 @media only screen and (min-width: 995px) {
 
     #practice-areas li{
@@ -144,11 +137,39 @@ input[type=submit]:hover {
     }
 }
 
+@media only screen and (min-width: 768px) {
+
+    #logo-name{
+        display: none;
+    }
+
+    #mobile-phone-nav{
+        display: none;
+    }
+
+    #resources-dropdown-mobile{
+        display: none;
+    }
+}
+
 /* Mobile View - When screen width is less than 768px */
 @media only screen and (max-width: 768px) {
 
     #navbar{
         background-color: rgb(62, 98, 147);
+    }
+
+    #resources-dropdown{
+        display: none;
+    }
+
+    #resources-dropdown-mobile ul{
+        background-color: lightgray;
+    }
+
+    #resources-dropdown-mobile .dropdown-item{
+        background-color: white;
+        margin-block: 0.3em;
     }
 
     #mobile-phone-nav a{
