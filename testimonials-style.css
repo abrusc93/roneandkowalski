@@ -11,6 +11,11 @@
     width: 100%;
 }
 
+#testimonials-container{
+    overflow: scroll;
+    height: 75vh;
+}
+
 blockquote p{
     margin-top: 2em;
 }
