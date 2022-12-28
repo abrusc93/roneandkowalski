@@ -11,7 +11,7 @@ $('.navbar-nav>.section-link>a').on('click', function(){
 });
 
 var pathname = window.location.pathname;
-if(pathname=="/index.html" || pathname=="/"){
+if(pathname=="/index.html" || pathname=="/" || pathname=="/index"){
     $(window).resize(function(){
         if($(window).width()<1200){
          $('.form-container').removeClass('w-50');
@@ -29,7 +29,7 @@ if(pathname=="/index.html" || pathname=="/"){
     }
 }
 
-else if(pathname=="/contact.html"){
+else if(pathname=="/contact.html" || pathname=="/contact"){
     $(window).resize(function(){
         if($(window).width()<1126){
         $('#staff-contacts-container').removeClass('w-75');
