@@ -55,13 +55,13 @@
 
   </head>
   
-  <body data-bs-spy="scroll" data-bs-target="#navbar">
+  <body>
 
     <!-- Home Section -->
     <section id="home">
 
-      <nav id="navbar" class="navbar navbar-dark navbar-expand-md fixed-top p-0 shadow">
-        <div class="container">
+      <nav id="navbar" class="navbar navbar-dark navbar-expand-lg fixed-top p-0 shadow">
+        <div class="container-fluid mx-5">
           <div class="navbar-brand p-0 m-0">
             <a href="/" class="text-white d-flex align-items-center" style="text-decoration: none; text-transform: uppercase; font-weight: bold;">
               <img class="navbar-brand" src="Images/logo.png" alt="Logo" width="100" height="auto">
@@ -72,12 +72,20 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse mb-1" id="navbarToggler">
-            <ul class="navbar-nav mb-lg-0 fs-5 text-nowrap mx-auto">
+            <ul class="navbar-nav fs-5 mb-lg-0 text-nowrap mx-auto">
               <li class="nav-item section-link">
-                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link active" href="#home">Home</a>
               </li>
-              <li class="nav-item section-link">
-                <a class="nav-link" href="#about">About</a>
+              <li id="practice-areas-dropdown" class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Practice Areas
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="workers-compensation">Worker's Compensation</a></li>
+                  <li><a class="dropdown-item" href="personal-injury">Personal Injury</a></li>
+                  <li><a class="dropdown-item" href="social-security-benefits">Social Security Disability</a></li>
+                  <li><a class="dropdown-item" href="family-law">Family Law</a></li>
+                </ul>
               </li>
               <li class="nav-item section-link">
                 <a class="nav-link" href="testimonials">Testimonials</a>
@@ -168,13 +176,37 @@
           <p>As a small firm, we are known for providing individualized attention to each and every client, and you always work directly with the attorney handling your case.</p>
           <br/>
           <h5>Practice Areas:</h5>
-          <ul class="d-flex" id="practice-areas">
-            <li>Personal Injury</li>
-            <li>Worker's Compensation</li>
-            <li>Social Security Disability</li>
-            <li>Family Law</li>
-          </ul>
+          <div class="container" id="practice-areas-container">
+            <ul>
+              <li>
+                <a href="workers-compensation">
+                  <div class="container area-container rounded shadow">
+                    <h5><b>Worker's Compensation</b></h5>
+                    <p>When you’re struggling with a work-related injury, we can help you alleviate the financial stress.</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="personal-injury">
+                  <div class="container area-container rounded shadow">
+                    <h5><b>Personal Injury</b></h5>
+                    <p>We work hard to help you collect compensation when you've been permanently injured due to another's negligence.</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="social-security-benefits">
+                  <div class="container area-container rounded shadow">
+                    <h5><b>Social Security Disability</b></h5>
+                    <p>We can help you get the benefits you need if an injury or illness prevents you from working.</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
           <br/>
+          
           <h5>A Passion for Justice</h5>
 
           <p>At Rone & Kowalski, LLC, we enjoy helping others get what they are entitled to under the law, and our passion for justice through the legal system has made us a trusted law firm in the local community.</p>
@@ -183,7 +215,7 @@
           <p>Our rates are competitive, and we have convenient appointments available throughout the week. We’re ready to conduct our own investigation into various matters, and we’re prepared to answer your questions. We’re ready to assist you in matters pertaining to Social security law, Workers' compensation law and Personal injury law.</p>
         </div>
 
-        <div class="container form-container m-auto w-50 shadow">
+        <div class="container form-container mb-auto w-50 shadow" id="index-form-container">
           <form>
             <h5>Contact Us Today:</h5>
             <br/>
@@ -208,11 +240,13 @@
       <br/>
       <h6 class="text-center">Contact us at (609) 476-4044 to learn more about our law firm or to schedule your free initial consultation.</h6>
       <br/>
-      <iframe class="container d-block mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3082.036883614046!2d-74.8913261!3d39.4232904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0cc3c1c897e8d%3A0xa325bf22e5ed6637!2s37%20Cannon%20Range%20Rd%2C%20Milmay%2C%20NJ%2008340!5e0!3m2!1sen!2sus!4v1662394389982!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="container-fluid" style="background-color: rgb(84, 84, 84);">
+        <iframe class="container d-block mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3082.036883614046!2d-74.8913261!3d39.4232904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0cc3c1c897e8d%3A0xa325bf22e5ed6637!2s37%20Cannon%20Range%20Rd%2C%20Milmay%2C%20NJ%2008340!5e0!3m2!1sen!2sus!4v1662394389982!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
 
     </section>
 
-    <footer class="page-footer container-fluid mt-5 mb-0 p-5 text-white text-center d-flex responsive-flex justify-content-between align-items-stretch">
+    <footer class="page-footer container-fluid mb-0 p-5 text-white text-center d-flex responsive-flex justify-content-between align-items-stretch">
       <div id="footer-item-1">
         Rone & Kowalski, LLC<br/>
         37 Cannon Range Road<br/>

@@ -1,0 +1,43 @@
+.practice-area-banner{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+.practice-area-banner-blur{
+    background-color: rgba(0, 0, 0, 0.5); 
+    height: 100%; 
+    width: 100%;
+}
+
+/* When screen width is less than 1126px */
+@media only screen and (max-width: 1126px) {
+
+    .responsive-flex {
+        flex-direction: column;
+    }
+    
+    #footer-item-1{
+        order: 1;
+    }
+
+    #footer-item-2{
+        order: 2;
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+
+    #footer-item-3{
+        order: 3;
+    }
+}
+
+/* Mobile View - When screen width is less than 768px */
+@media only screen and (max-width: 768px) {
+
+    .practice-area-banner{
+        margin-top: 101.820px;
+        height: 20vh;
+    }
+}

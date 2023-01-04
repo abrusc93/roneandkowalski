@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-    if ($(window).scrollTop()<=50 && $(window).width()>768) {
+    if ($(window).scrollTop()<=50 && $(window).width()>992) {
       $('#navbar').css('background', 'transparent');
     } else {
       $('#navbar').css('background', 'rgb(62, 98, 147)');
@@ -10,54 +10,22 @@ $('.navbar-nav>.section-link>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
-var pathname = window.location.pathname;
-if(pathname=="/index.html" || pathname=="/" || pathname=="/index"){
-    $(window).resize(function(){
-        if($(window).width()<1200){
-         $('.form-container').removeClass('w-50');
-        }
-        if($(window).width()>1200){
-            $('.form-container').addClass('w-50');
-        }
-    });
-    
+$(window).resize(function(){
     if($(window).width()<1200){
-        $('.form-container').removeClass('w-50');
+        $('#index-form-container').removeClass('w-50');
     }
     if($(window).width()>1200){
-        $('.form-container').addClass('w-50');
+        $('#index-form-container').addClass('w-50');
     }
-}
-
-else if(pathname=="/contact.html" || pathname=="/contact"){
-    $(window).resize(function(){
-        if($(window).width()<1126){
-        $('#staff-contacts-container').removeClass('w-75');
-        $('#right-container').removeClass('w-50');
-        $('#right-container').addClass('mx-auto');
-        }
-        if($(window).width()>1126){
-            $('#staff-contacts-container').addClass('w-75');
-            $('#right-container').removeClass('mx-auto');
-            $('#right-container').addClass('w-50');
-        }
-        if($(window).width()<487){
-            $('#office-hours-mobile').removeClass('w-50');
-        }
-        if($(window).width()>487){
-            $('#office-hours-mobile').addClass('w-50');
-        }
-    });
-
     if($(window).width()<1126){
-        $('#staff-contacts-container').removeClass('w-75');
-        $('#right-container').removeClass('w-50');
-        $('#right-container').addClass('mx-auto');
+        $('.left-container').removeClass('w-75');
+        $('.right-container').removeClass('w-50');
+        $('.right-container').addClass('mx-auto');
     }
     if($(window).width()>1126){
-        $('#staff-contacts-container').addClass('w-75');
-        $('#right-container').removeClass('mx-auto');
-        $('#right-container').addClass('w-50');
+        $('.left-container').addClass('w-75');
+        $('.right-container').removeClass('mx-auto');
+        $('.right-container').addClass('w-50');
     }
     if($(window).width()<487){
         $('#office-hours-mobile').removeClass('w-50');
@@ -65,6 +33,30 @@ else if(pathname=="/contact.html" || pathname=="/contact"){
     if($(window).width()>487){
         $('#office-hours-mobile').addClass('w-50');
     }
+});
+
+if($(window).width()<1200){
+    $('#index-form-container').removeClass('w-50');
+}
+if($(window).width()>1200){
+    $('#index-form-container').addClass('w-50');
+}
+
+if($(window).width()<1126){
+    $('.left-container').removeClass('w-75');
+    $('.right-container').removeClass('w-50');
+    $('.right-container').addClass('mx-auto');
+}
+if($(window).width()>1126){
+    $('.left-container').addClass('w-75');
+    $('.right-container').removeClass('mx-auto');
+    $('.right-container').addClass('w-50');
+}
+if($(window).width()<487){
+    $('#office-hours-mobile').removeClass('w-50');
+}
+if($(window).width()>487){
+    $('#office-hours-mobile').addClass('w-50');
 }
 
 const isNumericInput = (event) => {
